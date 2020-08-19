@@ -18,7 +18,6 @@ app.use(
     secure: process.env.NODE_ENV !== "test",
   })
 );
-
 app.use(currentUserRouter);
 app.use(signInRouter);
 app.use(signOutRouter);
