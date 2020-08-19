@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import buildClient from "../api/build-client";
 import Header from "../components/header";
 
-// getInitials context === {req, res } from Component
-// getInitials context === {Component, ctx: {req, res}} Custom App Component
+// Component getInitials context === {req, res } from
+// Custom App Component getInitials context === {Component, ctx: {req, res}}
 const AppComponent = ({ Component, pageProps, currentUser }) => {
   return (
     <div>
