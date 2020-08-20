@@ -5,8 +5,7 @@ const buildClient = ({ req }) => {
     // We are on the server
     console.log(req.headers);
     return axios.create({
-      // Dev Local Environment ONLY "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
-      baseURL: "http://www.rocketpaper.com.br",
+      baseURL: process.env.BASEURL,
       headers: req.headers,
     });
   } else {
