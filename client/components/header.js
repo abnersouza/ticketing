@@ -22,7 +22,7 @@ const Header = ({ currentUser }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <Link href="/">
-        <a className="navbar-brand">GitTix</a>
+        <a className="navbar-brand">ABRTICKETS</a>
       </Link>
 
       <div className="d-flex justify-content-end">

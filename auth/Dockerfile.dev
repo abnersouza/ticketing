@@ -1,0 +1,11 @@
+FROM node:alpine
+
+WORKDIR /app
+COPY package*.json .
+RUN npm install --only=prod
+COPY . .
+
+# Make sure it has no issues to build
+RUN npm run build
+
+CMD ["npm", "start"]
