@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc -p tsconfig.build.json",
     "start": "ts-node-dev --poll src/index.ts",
     "test": "jest --watchAll --no-cache",
     "test:ci": "jest"
@@ -37,7 +37,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.7",
+    "@types/jest": "^26.0.13",
     "@types/supertest": "^2.0.10",
     "jest": "^26.2.1",
     "mongodb-memory-server": "^6.6.3",

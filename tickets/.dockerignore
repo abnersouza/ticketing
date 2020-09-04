@@ -1,4 +1,8 @@
 node_modules
+test
+__mocks__
+__test__
+**/__test__
 
 # ignore .git and .cache folders
 .git

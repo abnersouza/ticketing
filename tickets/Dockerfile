@@ -12,6 +12,6 @@ COPY . .
 # Transpile the .ts files
 RUN npm run build
 # Remove unnecessary folder and files
-RUN rm -rf src tsconfig.json Dockerfile* 
+RUN rm -rf src tsconfig* Dockerfile* 
 
 CMD ["node", "index.js"]
